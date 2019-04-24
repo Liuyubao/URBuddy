@@ -1,0 +1,1115 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05CCBA7CE50CB308B646F2BFBAA89285 /* UIColor+FlatColors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC67A3FE51B24330A79C1536F26E59A /* UIColor+FlatColors-dummy.m */; };
+		15B67951681FF39D7F560650B9F7C0CF /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD86A6A701E6631EA64867525A49A86D /* Expression.swift */; };
+		1DCB3A431C615E46083BCA0EB8EA0EB3 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036AFF98EDB7A8E8B0DE06A718BCF9CF /* Size.swift */; };
+		1DCDB45A5DFFB73C90EEAA14539775BA /* LayoutProxy+TypeErasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DA37C359ABD88EFA431567882F58FE /* LayoutProxy+TypeErasure.swift */; };
+		240A0F0EFC70E12766B3BDF2370CB6E7 /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40E1614465945C23FA1912016ED4DF1 /* DPDUIView+Extension.swift */; };
+		25D2DBE5EBA7B9ED3DC1B5185C66498E /* Constrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF52E13F47A9A132EC67AE214627E93 /* Constrain.swift */; };
+		26B64CF50F3CE3896A5BB3A5C9C128AF /* UIColor+FlatColors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 883B848F5F9CEB61E8884A336769C0EF /* UIColor+FlatColors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AACA05FA0E510DF2CAD9C4018BD7545 /* Cartography-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CCDB17686F49E0CAD382835DDC18E574 /* Cartography-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CCADE3FCDE0463AD7B49D2B0E307CBE /* LayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1009E5CB8F69D0C8AFBFD68B498F3749 /* LayoutSupport.swift */; };
+		30631B0CB8A3A8726CE2AA7FB6EC548F /* Pods-URBuddy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C123F5E06C1E669472122A11AE405F32 /* Pods-URBuddy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33092C695BC7ECBD9958D66FF155855E /* LayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB306E87ECADD214036AC83B906B94B /* LayoutProxy.swift */; };
+		3810623383D9ACA3E9DB446922324695 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD18F0FD26B0304FBB555941EF309C0 /* Point.swift */; };
+		49473E945910402BE600FC38A380BA67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		49D9535D4C5F930D4030341ED2F96A35 /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DEC538955ACFB69B85D527BE7D3709 /* DPDKeyboardListener.swift */; };
+		521F4BBD97016949EE837DBA74ED0026 /* AutoresizingMaskLayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082C8684FD979687AE204E903CDC0FD1 /* AutoresizingMaskLayoutProxy.swift */; };
+		573FA8A312D833DA2F1FF734419EE989 /* DropDown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5098BA8F311DDF6F19C36F707A67756B /* DropDown-dummy.m */; };
+		585720EA60D264C86E24F8CD67FEDA62 /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BFBE9B6FD67D6A5B0CDD63297F76BD /* Dimension.swift */; };
+		5A4FF91EDA4E0B9D55B3821E1F430244 /* LayoutSupportProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663ABC0E73492006D719534177A64331 /* LayoutSupportProxy.swift */; };
+		64529F0467AB876ED04808A0674C9096 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12AFBED65B810AE2066BDB86EB9EF0C /* Edge.swift */; };
+		6629F7257A5A7AEE8E0C47F0C01B8C2C /* LayoutGuideProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EB24359B603998B334203998136E77 /* LayoutGuideProxy.swift */; };
+		6C2F82F89A8759D1981ABFD8036E0282 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446CCB73C3A8EB999FEE42F75EB451B9 /* Property.swift */; };
+		828176C2A8FE402B08BB535A38AE9F7C /* Cartography-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EE0070D958F3B832DEE206996B3F36B /* Cartography-dummy.m */; };
+		87BDAA1AF8730543593F4551EA513AA9 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = C566B291176789E348EFC812FBD45FBB /* Context.swift */; };
+		89A682C4E3E4B1B55085832D4CFB4ADA /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB9A2B0B0B603CD4A46043A1815210C /* DropDownCell.swift */; };
+		89CEC33ED68A569FD847292F1139C531 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		92C4AB65D0A0E8810D65044427E15D74 /* Edges.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E1B5F41DD073F042B118684FDE9B64 /* Edges.swift */; };
+		94A7DFD684BC8AE0EEF13BA17610C7C6 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61515E331B0FC82C567F888C559D7486 /* DropDown.swift */; };
+		A7198B9901AC2F41E43AE97BBB661F77 /* LayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055869ACEC47BD497F90E90F0BA304A /* LayoutGuide.swift */; };
+		AF9193D885D836E70D17733D2D35185D /* ConstraintGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800DC82A433AC591C233D9DD6D99A4F /* ConstraintGroup.swift */; };
+		B51533CA848EED082280551093DBE06B /* Distribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C38BB05A1E9C772BFE5218FDE85DC8 /* Distribute.swift */; };
+		B59E75CB029C100A622924064730EE7A /* DropDown-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BFA5BDB80102B22841B52EC8F8AAD920 /* DropDown-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6C40BEB489490A804217777D376AD78 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46B2EAE14F57C456AC52B3E2B841D57 /* Extensions.swift */; };
+		BA4CDF6377B9E4043910D50B37BAA5E1 /* LayoutItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674F5664682753E37F1B408613085532 /* LayoutItem.swift */; };
+		BF24609084483494C0E6056BD62684C8 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302A07470D06E5C1BB5BCECFBC65A346 /* Priority.swift */; };
+		C3851EB5463F8F3669AC09D6B1376A88 /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF74AC4D6663970724A61B17FB65A10 /* DropDown+Appearance.swift */; };
+		CBC208DD619AF5EF0F9E070F28E4C860 /* ViewProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3332C2196E69F455E4B273147FF27003 /* ViewProxy.swift */; };
+		D9DCC833AEACEAC21F569BEBB9170D86 /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D869EE4497EA22EDFD487A14E7C3B89 /* DPDConstants.swift */; };
+		DD9D802B2C29F57409366594E0C067A4 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CEE7DBC574A5492E09EEDF67E3F993 /* Constraint.swift */; };
+		DEB69C9AD367316811C2B36D5C245D9B /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514DA7D78244655392DF8ABE91201968 /* View.swift */; };
+		E0971127B4FBDE605D958E7C5CCFFB4B /* Pods-URBuddy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF309A3AB07DF5E33C26E01E7657CAB /* Pods-URBuddy-dummy.m */; };
+		E4360D8E68CDAD9D48E40AF1C49B9284 /* Coefficients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D011CA7791EEF7D67BBA298A63ED727 /* Coefficients.swift */; };
+		E4AB516E0CCD140D0AA59B822C1ED7B7 /* UIColor+FlatColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 96711A698BC62AF25115381338A65895 /* UIColor+FlatColors.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E753124EB18BB059C69ADA1FE1F3E806 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		EA0476907ECF715F12D6EAC530F25BB2 /* Compound.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D8E73A4D2A72721AAB9AC421CB6638 /* Compound.swift */; };
+		F606CD1DA0C2B31D912F70A649DD1F51 /* UIColor+FlatColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 53B5547FD261C7501C1408A08CC45F73 /* UIColor+FlatColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA05AA9FE282F7DD782546BE172554EB /* Align.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65987324CE543603A765857672EB6E35 /* Align.swift */; };
+		FB7AEE4233032270975F12E5C7842A72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		FF168F05DFAE21A2FFF0BD61B869E2BB /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A6E8EDF0C2B44BCF5CE81A48A8D2BF7 /* DropDownCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35F2A3B0531DB73DC17CC98E49B8E363 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD1ECC3979ED6D745803FF751221D70C;
+			remoteInfo = DropDown;
+		};
+		43A5D250B3DDE73B62647881AC403901 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1305A2A3108BB80AA55C80583A5071E;
+			remoteInfo = Cartography;
+		};
+		E7DB9926151C41934B2930E6EFB33A9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B2C018D1F974DE689A7CA8EB64C612;
+			remoteInfo = "UIColor+FlatColors";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00EB24359B603998B334203998136E77 /* LayoutGuideProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutGuideProxy.swift; path = Cartography/LayoutGuideProxy.swift; sourceTree = "<group>"; };
+		036AFF98EDB7A8E8B0DE06A718BCF9CF /* Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Size.swift; path = Cartography/Size.swift; sourceTree = "<group>"; };
+		06EDF6EB5468107BCA0C18D5F4B43D6A /* DropDown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DropDown.modulemap; sourceTree = "<group>"; };
+		082C8684FD979687AE204E903CDC0FD1 /* AutoresizingMaskLayoutProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoresizingMaskLayoutProxy.swift; path = Cartography/AutoresizingMaskLayoutProxy.swift; sourceTree = "<group>"; };
+		0FF309A3AB07DF5E33C26E01E7657CAB /* Pods-URBuddy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-URBuddy-dummy.m"; sourceTree = "<group>"; };
+		1009E5CB8F69D0C8AFBFD68B498F3749 /* LayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutSupport.swift; path = Cartography/LayoutSupport.swift; sourceTree = "<group>"; };
+		1800DC82A433AC591C233D9DD6D99A4F /* ConstraintGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintGroup.swift; path = Cartography/ConstraintGroup.swift; sourceTree = "<group>"; };
+		19231EF7BB8EBB640307ACA395025027 /* Cartography-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cartography-prefix.pch"; sourceTree = "<group>"; };
+		1C81DFF0D65201F926065FDB4CB27166 /* Pods-URBuddy-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-URBuddy-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1C9C8C44925C2B23B2AA54D5F86F5B76 /* Cartography.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Cartography.framework; path = Cartography.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		302A07470D06E5C1BB5BCECFBC65A346 /* Priority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = Cartography/Priority.swift; sourceTree = "<group>"; };
+		30DA37C359ABD88EFA431567882F58FE /* LayoutProxy+TypeErasure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LayoutProxy+TypeErasure.swift"; path = "Cartography/LayoutProxy+TypeErasure.swift"; sourceTree = "<group>"; };
+		3332C2196E69F455E4B273147FF27003 /* ViewProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewProxy.swift; path = Cartography/ViewProxy.swift; sourceTree = "<group>"; };
+		3D011CA7791EEF7D67BBA298A63ED727 /* Coefficients.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coefficients.swift; path = Cartography/Coefficients.swift; sourceTree = "<group>"; };
+		4305A905ABEF1C84C7B52362ECE12014 /* Cartography.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cartography.xcconfig; sourceTree = "<group>"; };
+		446CCB73C3A8EB999FEE42F75EB451B9 /* Property.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Property.swift; path = Cartography/Property.swift; sourceTree = "<group>"; };
+		4DE94C1EBD96E086A3EEDE1E5F0B8021 /* Cartography.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Cartography.modulemap; sourceTree = "<group>"; };
+		5098BA8F311DDF6F19C36F707A67756B /* DropDown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DropDown-dummy.m"; sourceTree = "<group>"; };
+		514DA7D78244655392DF8ABE91201968 /* View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = View.swift; path = Cartography/View.swift; sourceTree = "<group>"; };
+		53B5547FD261C7501C1408A08CC45F73 /* UIColor+FlatColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+FlatColors.h"; path = "UIColor+FlatColors/UIColor+FlatColors.h"; sourceTree = "<group>"; };
+		574E568B81C4C8CA23C59EB9ECAE923B /* Pods-URBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-URBuddy.debug.xcconfig"; sourceTree = "<group>"; };
+		61515E331B0FC82C567F888C559D7486 /* DropDown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDown.swift; path = DropDown/src/DropDown.swift; sourceTree = "<group>"; };
+		6228AD85CDA2AB7DC124E023919A1D2D /* Pods-URBuddy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-URBuddy.modulemap"; sourceTree = "<group>"; };
+		63DAB593425140DCD0BD3C782837FB0A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65987324CE543603A765857672EB6E35 /* Align.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Align.swift; path = Cartography/Align.swift; sourceTree = "<group>"; };
+		663ABC0E73492006D719534177A64331 /* LayoutSupportProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutSupportProxy.swift; path = Cartography/LayoutSupportProxy.swift; sourceTree = "<group>"; };
+		674F5664682753E37F1B408613085532 /* LayoutItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutItem.swift; path = Cartography/LayoutItem.swift; sourceTree = "<group>"; };
+		6D9CDA1601A48EA88F114F66C99D5861 /* UIColor+FlatColors-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+FlatColors-prefix.pch"; sourceTree = "<group>"; };
+		7BA848BC3BB8089C346395C8232D6EA5 /* Pods-URBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-URBuddy.release.xcconfig"; sourceTree = "<group>"; };
+		7D869EE4497EA22EDFD487A14E7C3B89 /* DPDConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDConstants.swift; path = DropDown/helpers/DPDConstants.swift; sourceTree = "<group>"; };
+		804DA547E5DCF7BE83CBAB2B9B1B644C /* DropDown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-prefix.pch"; sourceTree = "<group>"; };
+		80C04EF8C506C0A561153C75E6D7AB6B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83BFBE9B6FD67D6A5B0CDD63297F76BD /* Dimension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dimension.swift; path = Cartography/Dimension.swift; sourceTree = "<group>"; };
+		83E46739D05F74C93857E3D8AD29FF84 /* Pods_URBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_URBuddy.framework; path = "Pods-URBuddy.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85CEE7DBC574A5492E09EEDF67E3F993 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Cartography/Constraint.swift; sourceTree = "<group>"; };
+		883B848F5F9CEB61E8884A336769C0EF /* UIColor+FlatColors-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+FlatColors-umbrella.h"; sourceTree = "<group>"; };
+		8A6E8EDF0C2B44BCF5CE81A48A8D2BF7 /* DropDownCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DropDownCell.xib; path = DropDown/resources/DropDownCell.xib; sourceTree = "<group>"; };
+		8EB306E87ECADD214036AC83B906B94B /* LayoutProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutProxy.swift; path = Cartography/LayoutProxy.swift; sourceTree = "<group>"; };
+		8EF74AC4D6663970724A61B17FB65A10 /* DropDown+Appearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DropDown+Appearance.swift"; path = "DropDown/src/DropDown+Appearance.swift"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96711A698BC62AF25115381338A65895 /* UIColor+FlatColors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+FlatColors.m"; path = "UIColor+FlatColors/UIColor+FlatColors.m"; sourceTree = "<group>"; };
+		98DDF17DEED7E40D33EFE6337CC02FFA /* DropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DropDown.framework; path = DropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BB7FE551ED4C0DCC0244EC0DC3333C8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EE0070D958F3B832DEE206996B3F36B /* Cartography-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cartography-dummy.m"; sourceTree = "<group>"; };
+		A1C0C9B34252FF883730814B0A070593 /* DropDown.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.xcconfig; sourceTree = "<group>"; };
+		A40E1614465945C23FA1912016ED4DF1 /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DPDUIView+Extension.swift"; path = "DropDown/helpers/DPDUIView+Extension.swift"; sourceTree = "<group>"; };
+		A7D8E73A4D2A72721AAB9AC421CB6638 /* Compound.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compound.swift; path = Cartography/Compound.swift; sourceTree = "<group>"; };
+		A9AF697C2AF3E33EA5893FE17112988A /* UIColor_FlatColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UIColor_FlatColors.framework; path = "UIColor+FlatColors.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA0577CADEC335111C2A9C1DE9EBECDB /* Pods-URBuddy-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-URBuddy-acknowledgements.plist"; sourceTree = "<group>"; };
+		AEB9A2B0B0B603CD4A46043A1815210C /* DropDownCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDownCell.swift; path = DropDown/src/DropDownCell.swift; sourceTree = "<group>"; };
+		BD86A6A701E6631EA64867525A49A86D /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Cartography/Expression.swift; sourceTree = "<group>"; };
+		BEF52E13F47A9A132EC67AE214627E93 /* Constrain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constrain.swift; path = Cartography/Constrain.swift; sourceTree = "<group>"; };
+		BFA5BDB80102B22841B52EC8F8AAD920 /* DropDown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-umbrella.h"; sourceTree = "<group>"; };
+		C055869ACEC47BD497F90E90F0BA304A /* LayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutGuide.swift; path = Cartography/LayoutGuide.swift; sourceTree = "<group>"; };
+		C123F5E06C1E669472122A11AE405F32 /* Pods-URBuddy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-URBuddy-umbrella.h"; sourceTree = "<group>"; };
+		C4DEC538955ACFB69B85D527BE7D3709 /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDKeyboardListener.swift; path = DropDown/helpers/DPDKeyboardListener.swift; sourceTree = "<group>"; };
+		C566B291176789E348EFC812FBD45FBB /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = Cartography/Context.swift; sourceTree = "<group>"; };
+		C88F10CB17B4D2D6B7252C046D0380F8 /* Pods-URBuddy-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-URBuddy-resources.sh"; sourceTree = "<group>"; };
+		CAC67A3FE51B24330A79C1536F26E59A /* UIColor+FlatColors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FlatColors-dummy.m"; sourceTree = "<group>"; };
+		CCDB17686F49E0CAD382835DDC18E574 /* Cartography-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cartography-umbrella.h"; sourceTree = "<group>"; };
+		D0E1B5F41DD073F042B118684FDE9B64 /* Edges.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edges.swift; path = Cartography/Edges.swift; sourceTree = "<group>"; };
+		D12AFBED65B810AE2066BDB86EB9EF0C /* Edge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edge.swift; path = Cartography/Edge.swift; sourceTree = "<group>"; };
+		D1B143A2AC1ADCB35D7D465BC9C9217E /* Pods-URBuddy-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-URBuddy-frameworks.sh"; sourceTree = "<group>"; };
+		D3C38BB05A1E9C772BFE5218FDE85DC8 /* Distribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Distribute.swift; path = Cartography/Distribute.swift; sourceTree = "<group>"; };
+		D46B2EAE14F57C456AC52B3E2B841D57 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Cartography/Extensions.swift; sourceTree = "<group>"; };
+		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DD988BCC549838865CE8B18A0F8C1E14 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E646DF9E3195B6A1C1AA718F13D2E7E6 /* UIColor+FlatColors.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "UIColor+FlatColors.modulemap"; sourceTree = "<group>"; };
+		EBCFB523E511464AA056ABFDEB2D02E6 /* UIColor+FlatColors.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIColor+FlatColors.xcconfig"; sourceTree = "<group>"; };
+		EDD18F0FD26B0304FBB555941EF309C0 /* Point.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Point.swift; path = Cartography/Point.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4446B0A3B23383BE2A37E7A7C9BDAC6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49473E945910402BE600FC38A380BA67 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A63A8F027107CE19704F4E80EA8F1F8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E753124EB18BB059C69ADA1FE1F3E806 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF9049D09BE4217F3685160B3E230B90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89CEC33ED68A569FD847292F1139C531 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0DA683DA40E0FEAD3292B4E36F89295 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB7AEE4233032270975F12E5C7842A72 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D254DF4DF166797A5FBA60B47945F9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C9C8C44925C2B23B2AA54D5F86F5B76 /* Cartography.framework */,
+				98DDF17DEED7E40D33EFE6337CC02FFA /* DropDown.framework */,
+				83E46739D05F74C93857E3D8AD29FF84 /* Pods_URBuddy.framework */,
+				A9AF697C2AF3E33EA5893FE17112988A /* UIColor_FlatColors.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3175D6FEB055F31001533FC268FA83BB /* Pods-URBuddy */ = {
+			isa = PBXGroup;
+			children = (
+				80C04EF8C506C0A561153C75E6D7AB6B /* Info.plist */,
+				6228AD85CDA2AB7DC124E023919A1D2D /* Pods-URBuddy.modulemap */,
+				1C81DFF0D65201F926065FDB4CB27166 /* Pods-URBuddy-acknowledgements.markdown */,
+				AA0577CADEC335111C2A9C1DE9EBECDB /* Pods-URBuddy-acknowledgements.plist */,
+				0FF309A3AB07DF5E33C26E01E7657CAB /* Pods-URBuddy-dummy.m */,
+				D1B143A2AC1ADCB35D7D465BC9C9217E /* Pods-URBuddy-frameworks.sh */,
+				C88F10CB17B4D2D6B7252C046D0380F8 /* Pods-URBuddy-resources.sh */,
+				C123F5E06C1E669472122A11AE405F32 /* Pods-URBuddy-umbrella.h */,
+				574E568B81C4C8CA23C59EB9ECAE923B /* Pods-URBuddy.debug.xcconfig */,
+				7BA848BC3BB8089C346395C8232D6EA5 /* Pods-URBuddy.release.xcconfig */,
+			);
+			name = "Pods-URBuddy";
+			path = "Target Support Files/Pods-URBuddy";
+			sourceTree = "<group>";
+		};
+		44D5347904CF754D6785B84253F2574A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		632C30AE78580AB83B1A0A6F0013DB8B /* DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				7D869EE4497EA22EDFD487A14E7C3B89 /* DPDConstants.swift */,
+				C4DEC538955ACFB69B85D527BE7D3709 /* DPDKeyboardListener.swift */,
+				A40E1614465945C23FA1912016ED4DF1 /* DPDUIView+Extension.swift */,
+				61515E331B0FC82C567F888C559D7486 /* DropDown.swift */,
+				8EF74AC4D6663970724A61B17FB65A10 /* DropDown+Appearance.swift */,
+				AEB9A2B0B0B603CD4A46043A1815210C /* DropDownCell.swift */,
+				673D0CBD1A51A1AE27B8CF98AD23C3D2 /* Resources */,
+				990566C41961F442BB0F66DA5E0E037A /* Support Files */,
+			);
+			name = DropDown;
+			path = DropDown;
+			sourceTree = "<group>";
+		};
+		673D0CBD1A51A1AE27B8CF98AD23C3D2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8A6E8EDF0C2B44BCF5CE81A48A8D2BF7 /* DropDownCell.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		73C6914AA9734011331F87D5E90923A8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DE94C1EBD96E086A3EEDE1E5F0B8021 /* Cartography.modulemap */,
+				4305A905ABEF1C84C7B52362ECE12014 /* Cartography.xcconfig */,
+				9EE0070D958F3B832DEE206996B3F36B /* Cartography-dummy.m */,
+				19231EF7BB8EBB640307ACA395025027 /* Cartography-prefix.pch */,
+				CCDB17686F49E0CAD382835DDC18E574 /* Cartography-umbrella.h */,
+				DD988BCC549838865CE8B18A0F8C1E14 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Cartography";
+			sourceTree = "<group>";
+		};
+		7AC4B9C80117AEE50DAA29746690D499 /* UIColor+FlatColors */ = {
+			isa = PBXGroup;
+			children = (
+				53B5547FD261C7501C1408A08CC45F73 /* UIColor+FlatColors.h */,
+				96711A698BC62AF25115381338A65895 /* UIColor+FlatColors.m */,
+				C3210E3A03A1B0EEA592B296C8B9192A /* Support Files */,
+			);
+			name = "UIColor+FlatColors";
+			path = "UIColor+FlatColors";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				DDC774CE485D583CF5E7962BFADD5E48 /* Pods */,
+				2D254DF4DF166797A5FBA60B47945F9D /* Products */,
+				F3F60CA41DB75159223B720D090080E1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		990566C41961F442BB0F66DA5E0E037A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				06EDF6EB5468107BCA0C18D5F4B43D6A /* DropDown.modulemap */,
+				A1C0C9B34252FF883730814B0A070593 /* DropDown.xcconfig */,
+				5098BA8F311DDF6F19C36F707A67756B /* DropDown-dummy.m */,
+				804DA547E5DCF7BE83CBAB2B9B1B644C /* DropDown-prefix.pch */,
+				BFA5BDB80102B22841B52EC8F8AAD920 /* DropDown-umbrella.h */,
+				9BB7FE551ED4C0DCC0244EC0DC3333C8 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DropDown";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44D5347904CF754D6785B84253F2574A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3210E3A03A1B0EEA592B296C8B9192A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				63DAB593425140DCD0BD3C782837FB0A /* Info.plist */,
+				E646DF9E3195B6A1C1AA718F13D2E7E6 /* UIColor+FlatColors.modulemap */,
+				EBCFB523E511464AA056ABFDEB2D02E6 /* UIColor+FlatColors.xcconfig */,
+				CAC67A3FE51B24330A79C1536F26E59A /* UIColor+FlatColors-dummy.m */,
+				6D9CDA1601A48EA88F114F66C99D5861 /* UIColor+FlatColors-prefix.pch */,
+				883B848F5F9CEB61E8884A336769C0EF /* UIColor+FlatColors-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UIColor+FlatColors";
+			sourceTree = "<group>";
+		};
+		DDC774CE485D583CF5E7962BFADD5E48 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE0F7EF79FD1C162D200D4DB54D4BAAE /* Cartography */,
+				632C30AE78580AB83B1A0A6F0013DB8B /* DropDown */,
+				7AC4B9C80117AEE50DAA29746690D499 /* UIColor+FlatColors */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DE0F7EF79FD1C162D200D4DB54D4BAAE /* Cartography */ = {
+			isa = PBXGroup;
+			children = (
+				65987324CE543603A765857672EB6E35 /* Align.swift */,
+				082C8684FD979687AE204E903CDC0FD1 /* AutoresizingMaskLayoutProxy.swift */,
+				3D011CA7791EEF7D67BBA298A63ED727 /* Coefficients.swift */,
+				A7D8E73A4D2A72721AAB9AC421CB6638 /* Compound.swift */,
+				BEF52E13F47A9A132EC67AE214627E93 /* Constrain.swift */,
+				85CEE7DBC574A5492E09EEDF67E3F993 /* Constraint.swift */,
+				1800DC82A433AC591C233D9DD6D99A4F /* ConstraintGroup.swift */,
+				C566B291176789E348EFC812FBD45FBB /* Context.swift */,
+				83BFBE9B6FD67D6A5B0CDD63297F76BD /* Dimension.swift */,
+				D3C38BB05A1E9C772BFE5218FDE85DC8 /* Distribute.swift */,
+				D12AFBED65B810AE2066BDB86EB9EF0C /* Edge.swift */,
+				D0E1B5F41DD073F042B118684FDE9B64 /* Edges.swift */,
+				BD86A6A701E6631EA64867525A49A86D /* Expression.swift */,
+				D46B2EAE14F57C456AC52B3E2B841D57 /* Extensions.swift */,
+				C055869ACEC47BD497F90E90F0BA304A /* LayoutGuide.swift */,
+				00EB24359B603998B334203998136E77 /* LayoutGuideProxy.swift */,
+				674F5664682753E37F1B408613085532 /* LayoutItem.swift */,
+				8EB306E87ECADD214036AC83B906B94B /* LayoutProxy.swift */,
+				30DA37C359ABD88EFA431567882F58FE /* LayoutProxy+TypeErasure.swift */,
+				1009E5CB8F69D0C8AFBFD68B498F3749 /* LayoutSupport.swift */,
+				663ABC0E73492006D719534177A64331 /* LayoutSupportProxy.swift */,
+				EDD18F0FD26B0304FBB555941EF309C0 /* Point.swift */,
+				302A07470D06E5C1BB5BCECFBC65A346 /* Priority.swift */,
+				446CCB73C3A8EB999FEE42F75EB451B9 /* Property.swift */,
+				036AFF98EDB7A8E8B0DE06A718BCF9CF /* Size.swift */,
+				514DA7D78244655392DF8ABE91201968 /* View.swift */,
+				3332C2196E69F455E4B273147FF27003 /* ViewProxy.swift */,
+				73C6914AA9734011331F87D5E90923A8 /* Support Files */,
+			);
+			name = Cartography;
+			path = Cartography;
+			sourceTree = "<group>";
+		};
+		F3F60CA41DB75159223B720D090080E1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3175D6FEB055F31001533FC268FA83BB /* Pods-URBuddy */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AE6D5443441773E4496D55CE845442B9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30631B0CB8A3A8726CE2AA7FB6EC548F /* Pods-URBuddy-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9D92D4BE9DD9F46437BCAB16F4B09A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AACA05FA0E510DF2CAD9C4018BD7545 /* Cartography-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30D98263CC89C39DE616F507092D788 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B59E75CB029C100A622924064730EE7A /* DropDown-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD8143F3A453FE08813EED43A8AF01C0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26B64CF50F3CE3896A5BB3A5C9C128AF /* UIColor+FlatColors-umbrella.h in Headers */,
+				F606CD1DA0C2B31D912F70A649DD1F51 /* UIColor+FlatColors.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		52B2C018D1F974DE689A7CA8EB64C612 /* UIColor+FlatColors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44F3304D82DF4EC00625CA8DCEEB9F77 /* Build configuration list for PBXNativeTarget "UIColor+FlatColors" */;
+			buildPhases = (
+				DD8143F3A453FE08813EED43A8AF01C0 /* Headers */,
+				8EFADB6B852D69D221771EE5CBD6CC5F /* Sources */,
+				A63A8F027107CE19704F4E80EA8F1F8F /* Frameworks */,
+				492A59109C6440311E203D2F150C5645 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UIColor+FlatColors";
+			productName = "UIColor+FlatColors";
+			productReference = A9AF697C2AF3E33EA5893FE17112988A /* UIColor_FlatColors.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B1305A2A3108BB80AA55C80583A5071E /* Cartography */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D37FEE46A453B5E549F65F1E87D5F58 /* Build configuration list for PBXNativeTarget "Cartography" */;
+			buildPhases = (
+				B9D92D4BE9DD9F46437BCAB16F4B09A5 /* Headers */,
+				240E7ADCAB20192B93D380775A763CEB /* Sources */,
+				BF9049D09BE4217F3685160B3E230B90 /* Frameworks */,
+				DD24B5907F3E682E6B759DB0B4EC40ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cartography;
+			productName = Cartography;
+			productReference = 1C9C8C44925C2B23B2AA54D5F86F5B76 /* Cartography.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E1D528B7999646183790911FD7E87BCD /* Pods-URBuddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E13F051416D4ECBE225BFF156C1B667 /* Build configuration list for PBXNativeTarget "Pods-URBuddy" */;
+			buildPhases = (
+				AE6D5443441773E4496D55CE845442B9 /* Headers */,
+				974E98193E1BC224E13FF83ECA3B22E2 /* Sources */,
+				E0DA683DA40E0FEAD3292B4E36F89295 /* Frameworks */,
+				BCF9415457CC84D784C386C4FAD61636 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C66F7A4C8EE9122D5FDF5A70624A144A /* PBXTargetDependency */,
+				B49E9A5A10161C1AF965FA5151FAD6C7 /* PBXTargetDependency */,
+				C632C8CCAC8E8BFA3951CBBA445BD6EA /* PBXTargetDependency */,
+			);
+			name = "Pods-URBuddy";
+			productName = "Pods-URBuddy";
+			productReference = 83E46739D05F74C93857E3D8AD29FF84 /* Pods_URBuddy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FD1ECC3979ED6D745803FF751221D70C /* DropDown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA336CF301A80A832FE821A4157B24CB /* Build configuration list for PBXNativeTarget "DropDown" */;
+			buildPhases = (
+				C30D98263CC89C39DE616F507092D788 /* Headers */,
+				3ADCE2BE57BDA56AE1CB3CE9A38A4F5C /* Sources */,
+				4446B0A3B23383BE2A37E7A7C9BDAC6D /* Frameworks */,
+				A3FEE9F76E64532EA9614DAB44A57029 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DropDown;
+			productName = DropDown;
+			productReference = 98DDF17DEED7E40D33EFE6337CC02FFA /* DropDown.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 2D254DF4DF166797A5FBA60B47945F9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1305A2A3108BB80AA55C80583A5071E /* Cartography */,
+				FD1ECC3979ED6D745803FF751221D70C /* DropDown */,
+				E1D528B7999646183790911FD7E87BCD /* Pods-URBuddy */,
+				52B2C018D1F974DE689A7CA8EB64C612 /* UIColor+FlatColors */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		492A59109C6440311E203D2F150C5645 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3FEE9F76E64532EA9614DAB44A57029 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF168F05DFAE21A2FFF0BD61B869E2BB /* DropDownCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCF9415457CC84D784C386C4FAD61636 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD24B5907F3E682E6B759DB0B4EC40ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		240E7ADCAB20192B93D380775A763CEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA05AA9FE282F7DD782546BE172554EB /* Align.swift in Sources */,
+				521F4BBD97016949EE837DBA74ED0026 /* AutoresizingMaskLayoutProxy.swift in Sources */,
+				828176C2A8FE402B08BB535A38AE9F7C /* Cartography-dummy.m in Sources */,
+				E4360D8E68CDAD9D48E40AF1C49B9284 /* Coefficients.swift in Sources */,
+				EA0476907ECF715F12D6EAC530F25BB2 /* Compound.swift in Sources */,
+				25D2DBE5EBA7B9ED3DC1B5185C66498E /* Constrain.swift in Sources */,
+				DD9D802B2C29F57409366594E0C067A4 /* Constraint.swift in Sources */,
+				AF9193D885D836E70D17733D2D35185D /* ConstraintGroup.swift in Sources */,
+				87BDAA1AF8730543593F4551EA513AA9 /* Context.swift in Sources */,
+				585720EA60D264C86E24F8CD67FEDA62 /* Dimension.swift in Sources */,
+				B51533CA848EED082280551093DBE06B /* Distribute.swift in Sources */,
+				64529F0467AB876ED04808A0674C9096 /* Edge.swift in Sources */,
+				92C4AB65D0A0E8810D65044427E15D74 /* Edges.swift in Sources */,
+				15B67951681FF39D7F560650B9F7C0CF /* Expression.swift in Sources */,
+				B6C40BEB489490A804217777D376AD78 /* Extensions.swift in Sources */,
+				A7198B9901AC2F41E43AE97BBB661F77 /* LayoutGuide.swift in Sources */,
+				6629F7257A5A7AEE8E0C47F0C01B8C2C /* LayoutGuideProxy.swift in Sources */,
+				BA4CDF6377B9E4043910D50B37BAA5E1 /* LayoutItem.swift in Sources */,
+				1DCDB45A5DFFB73C90EEAA14539775BA /* LayoutProxy+TypeErasure.swift in Sources */,
+				33092C695BC7ECBD9958D66FF155855E /* LayoutProxy.swift in Sources */,
+				2CCADE3FCDE0463AD7B49D2B0E307CBE /* LayoutSupport.swift in Sources */,
+				5A4FF91EDA4E0B9D55B3821E1F430244 /* LayoutSupportProxy.swift in Sources */,
+				3810623383D9ACA3E9DB446922324695 /* Point.swift in Sources */,
+				BF24609084483494C0E6056BD62684C8 /* Priority.swift in Sources */,
+				6C2F82F89A8759D1981ABFD8036E0282 /* Property.swift in Sources */,
+				1DCB3A431C615E46083BCA0EB8EA0EB3 /* Size.swift in Sources */,
+				DEB69C9AD367316811C2B36D5C245D9B /* View.swift in Sources */,
+				CBC208DD619AF5EF0F9E070F28E4C860 /* ViewProxy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ADCE2BE57BDA56AE1CB3CE9A38A4F5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9DCC833AEACEAC21F569BEBB9170D86 /* DPDConstants.swift in Sources */,
+				49D9535D4C5F930D4030341ED2F96A35 /* DPDKeyboardListener.swift in Sources */,
+				240A0F0EFC70E12766B3BDF2370CB6E7 /* DPDUIView+Extension.swift in Sources */,
+				C3851EB5463F8F3669AC09D6B1376A88 /* DropDown+Appearance.swift in Sources */,
+				573FA8A312D833DA2F1FF734419EE989 /* DropDown-dummy.m in Sources */,
+				94A7DFD684BC8AE0EEF13BA17610C7C6 /* DropDown.swift in Sources */,
+				89A682C4E3E4B1B55085832D4CFB4ADA /* DropDownCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EFADB6B852D69D221771EE5CBD6CC5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05CCBA7CE50CB308B646F2BFBAA89285 /* UIColor+FlatColors-dummy.m in Sources */,
+				E4AB516E0CCD140D0AA59B822C1ED7B7 /* UIColor+FlatColors.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		974E98193E1BC224E13FF83ECA3B22E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0971127B4FBDE605D958E7C5CCFFB4B /* Pods-URBuddy-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B49E9A5A10161C1AF965FA5151FAD6C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DropDown;
+			target = FD1ECC3979ED6D745803FF751221D70C /* DropDown */;
+			targetProxy = 35F2A3B0531DB73DC17CC98E49B8E363 /* PBXContainerItemProxy */;
+		};
+		C632C8CCAC8E8BFA3951CBBA445BD6EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UIColor+FlatColors";
+			target = 52B2C018D1F974DE689A7CA8EB64C612 /* UIColor+FlatColors */;
+			targetProxy = E7DB9926151C41934B2930E6EFB33A9C /* PBXContainerItemProxy */;
+		};
+		C66F7A4C8EE9122D5FDF5A70624A144A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Cartography;
+			target = B1305A2A3108BB80AA55C80583A5071E /* Cartography */;
+			targetProxy = 43A5D250B3DDE73B62647881AC403901 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1E8AEEF9AABDB63E62F1CB0868946F76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBCFB523E511464AA056ABFDEB2D02E6 /* UIColor+FlatColors.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor+FlatColors/UIColor+FlatColors-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor+FlatColors/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/UIColor+FlatColors/UIColor+FlatColors.modulemap";
+				PRODUCT_MODULE_NAME = UIColor_FlatColors;
+				PRODUCT_NAME = UIColor_FlatColors;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4DB7EA9568EBB2D72F730A57686146F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 574E568B81C4C8CA23C59EB9ECAE923B /* Pods-URBuddy.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-URBuddy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-URBuddy/Pods-URBuddy.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		68F29B74FA6C3E5C4809D6CC8C0BF83B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBCFB523E511464AA056ABFDEB2D02E6 /* UIColor+FlatColors.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor+FlatColors/UIColor+FlatColors-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor+FlatColors/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/UIColor+FlatColors/UIColor+FlatColors.modulemap";
+				PRODUCT_MODULE_NAME = UIColor_FlatColors;
+				PRODUCT_NAME = UIColor_FlatColors;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7E4E7A6D488A09F05E339904E429D29F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1C0C9B34252FF883730814B0A070593 /* DropDown.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DropDown/DropDown-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DropDown/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DropDown/DropDown.modulemap";
+				PRODUCT_MODULE_NAME = DropDown;
+				PRODUCT_NAME = DropDown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		88FF1B6CDAA61AFD925BD406BFABD93C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		92B5022B5A69DEA7A4F405CBE78A9674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BA848BC3BB8089C346395C8232D6EA5 /* Pods-URBuddy.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-URBuddy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-URBuddy/Pods-URBuddy.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		99D0FA90E6DAB37037263E3CA5E92D15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4305A905ABEF1C84C7B52362ECE12014 /* Cartography.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Cartography/Cartography-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cartography/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Cartography/Cartography.modulemap";
+				PRODUCT_MODULE_NAME = Cartography;
+				PRODUCT_NAME = Cartography;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A276401704A57F0FF0960EFAA12C7667 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4305A905ABEF1C84C7B52362ECE12014 /* Cartography.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Cartography/Cartography-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cartography/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Cartography/Cartography.modulemap";
+				PRODUCT_MODULE_NAME = Cartography;
+				PRODUCT_NAME = Cartography;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BC1D7053277E9BD20DC1CCE2348CDC4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D7DE85806B8F76E59E0B279B314E17A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1C0C9B34252FF883730814B0A070593 /* DropDown.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DropDown/DropDown-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DropDown/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DropDown/DropDown.modulemap";
+				PRODUCT_MODULE_NAME = DropDown;
+				PRODUCT_NAME = DropDown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88FF1B6CDAA61AFD925BD406BFABD93C /* Debug */,
+				BC1D7053277E9BD20DC1CCE2348CDC4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44F3304D82DF4EC00625CA8DCEEB9F77 /* Build configuration list for PBXNativeTarget "UIColor+FlatColors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68F29B74FA6C3E5C4809D6CC8C0BF83B /* Debug */,
+				1E8AEEF9AABDB63E62F1CB0868946F76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E13F051416D4ECBE225BFF156C1B667 /* Build configuration list for PBXNativeTarget "Pods-URBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DB7EA9568EBB2D72F730A57686146F1 /* Debug */,
+				92B5022B5A69DEA7A4F405CBE78A9674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D37FEE46A453B5E549F65F1E87D5F58 /* Build configuration list for PBXNativeTarget "Cartography" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99D0FA90E6DAB37037263E3CA5E92D15 /* Debug */,
+				A276401704A57F0FF0960EFAA12C7667 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA336CF301A80A832FE821A4157B24CB /* Build configuration list for PBXNativeTarget "DropDown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7DE85806B8F76E59E0B279B314E17A7 /* Debug */,
+				7E4E7A6D488A09F05E339904E429D29F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

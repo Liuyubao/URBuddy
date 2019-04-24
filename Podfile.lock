@@ -1,0 +1,24 @@
+PODS:
+  - Cartography (3.1.0)
+  - DropDown (2.3.12)
+  - "UIColor+FlatColors (0.0.2)"
+
+DEPENDENCIES:
+  - Cartography
+  - DropDown
+  - "UIColor+FlatColors"
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Cartography
+    - DropDown
+    - "UIColor+FlatColors"
+
+SPEC CHECKSUMS:
+  Cartography: 1988b7578871a56c036e7af17195cb2190edf18c
+  DropDown: 0bcc278799ec11a3d34ce1aac9367fbbaf5423d9
+  "UIColor+FlatColors": 6c699df7a575281794c688c64cee6c44fd1f93b4
+
+PODFILE CHECKSUM: 713234ce5c836bfd7cffb71e0eaf10834ee5f236
+
+COCOAPODS: 1.5.3
