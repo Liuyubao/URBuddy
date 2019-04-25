@@ -5,6 +5,10 @@ import UIKit
 class HistoryDemoViewController: ZLSwipeableViewController {
     @IBOutlet weak var historyBtn: UIButton!
     @IBOutlet weak var msgBtn: UIButton!
+    @IBAction func backToMsgBtnClciked(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
