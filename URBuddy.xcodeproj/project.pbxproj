@@ -25,6 +25,7 @@
 		653AFFE9227055BA00F571C7 /* ChooseMajorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653AFFE8227055BA00F571C7 /* ChooseMajorVC.swift */; };
 		653AFFEB22705AC800F571C7 /* HeadIconVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653AFFEA22705AC800F571C7 /* HeadIconVC.swift */; };
 		653AFFED2271132E00F571C7 /* SendMsgVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653AFFEC2271132E00F571C7 /* SendMsgVC.swift */; };
+		653AFFEF2271468E00F571C7 /* MyMsgVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653AFFEE2271468E00F571C7 /* MyMsgVC.swift */; };
 		657A0F822257073300EF989E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657A0F812257073300EF989E /* AppDelegate.swift */; };
 		657A0F842257073300EF989E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657A0F832257073300EF989E /* ViewController.swift */; };
 		657A0F872257073300EF989E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 657A0F852257073300EF989E /* Main.storyboard */; };
@@ -54,6 +55,7 @@
 		653AFFE8227055BA00F571C7 /* ChooseMajorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseMajorVC.swift; sourceTree = "<group>"; };
 		653AFFEA22705AC800F571C7 /* HeadIconVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadIconVC.swift; sourceTree = "<group>"; };
 		653AFFEC2271132E00F571C7 /* SendMsgVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMsgVC.swift; sourceTree = "<group>"; };
+		653AFFEE2271468E00F571C7 /* MyMsgVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMsgVC.swift; sourceTree = "<group>"; };
 		657A0F7E2257073200EF989E /* URBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		657A0F812257073300EF989E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		657A0F832257073300EF989E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				657A0F972257B52400EF989E /* TempViewController.swift */,
 				653AFFE8227055BA00F571C7 /* ChooseMajorVC.swift */,
 				653AFFEA22705AC800F571C7 /* HeadIconVC.swift */,
+				653AFFEE2271468E00F571C7 /* MyMsgVC.swift */,
 				653AFFEC2271132E00F571C7 /* SendMsgVC.swift */,
 				653AFFE6227045DD00F571C7 /* CreateAccountVC.swift */,
 				657A0F812257073300EF989E /* AppDelegate.swift */,
@@ -289,6 +292,7 @@
 			files = (
 				653AFFE5227044B400F571C7 /* ZHFColor.swift in Sources */,
 				653AFFD0226FE4A700F571C7 /* Scheduler.swift in Sources */,
+				653AFFEF2271468E00F571C7 /* MyMsgVC.swift in Sources */,
 				653AFFE4227044B400F571C7 /* UpDownView.swift in Sources */,
 				653AFFCD226FE4A700F571C7 /* ViewManager.swift in Sources */,
 				653AFFED2271132E00F571C7 /* SendMsgVC.swift in Sources */,
