@@ -9,5 +9,7 @@ target 'URBuddy' do
 	pod 'UIColor+FlatColors'
 	pod 'Cartography'
 	pod 'DropDown'
+	pod 'Alamofire'
+	pod 'NVActivityIndicatorView'
 
 end

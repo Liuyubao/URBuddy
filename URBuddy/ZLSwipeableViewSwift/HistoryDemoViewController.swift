@@ -8,12 +8,33 @@ class HistoryDemoViewController: ZLSwipeableViewController {
     @IBAction func backToMsgBtnClciked(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
+    @IBAction func msgBtnClicked(_ sender: UIButton) {
+        let toName = self.userInfos[self.infoIndex - 3]["name"] as! String
+        let toTelephone = self.userInfos[self.infoIndex - 3]["telephone"] as! String
+        UserDefaults.standard.setValue(toTelephone, forKey: "toTelephone")
+        UserDefaults.standard.setValue(toName, forKey: "toName")
+//        toName.ext_debugPrintAndHint()
+//        toTelephone.ext_debugPrintAndHint()
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SendMsgVC") as! SendMsgVC
+        vc.modalTransitionStyle = .crossDissolve
+        self.present(vc, animated: true, completion: nil)
+        
+        
+    }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        let role = UserDefaults.standard.dictionary(forKey: "result")!["role"] as! Int
+        if role == 2001{
+            self.historyBtn.isEnabled = false
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 //        self.view.backgroundColor = UIColor.init(red: 255, green: 232, blue: 13, alpha: 0.0)
-
+        
+        
         swipeableView.numberOfHistoryItem = UInt.max
         swipeableView.allowedDirection = Direction.All
 
@@ -33,6 +54,10 @@ class HistoryDemoViewController: ZLSwipeableViewController {
             self.navigationItem.rightBarButtonItem?.title = "\(rightBarButtonItemTitle)\(suffix)"
             
             self.historyBtn.setTitle("\(rightBarButtonItemTitle)\(suffix)", for: .normal)
+            
+            //store the data
+            
+            
         }
 
         swipeableView.didSwipe = {view, direction, vector in
@@ -52,6 +77,8 @@ class HistoryDemoViewController: ZLSwipeableViewController {
     // MARK: - Actions
     
     @objc func rightButtonClicked() {
+        self.infoIndex -= 1
+        self.colorIndex -= 1
         self.swipeableView.rewind()
         // updateRightBarButtonItem()
     }

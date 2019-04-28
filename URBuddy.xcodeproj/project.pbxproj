@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		653A000422755CEF00F571C7 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653A000322755CEF00F571C7 /* StringExtension.swift */; };
+		653A000622755DA600F571C7 /* HintTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653A000522755DA600F571C7 /* HintTool.swift */; };
+		653A00082275686B00F571C7 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653A00072275686B00F571C7 /* Validation.swift */; };
+		653A000A2275713A00F571C7 /* URBRoleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653A00092275713A00F571C7 /* URBRoleModel.swift */; };
+		653A000C2275718F00F571C7 /* URBAuthorityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653A000B2275718F00F571C7 /* URBAuthorityModel.swift */; };
+		653A000E227571CE00F571C7 /* URBMassageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653A000D227571CE00F571C7 /* URBMassageModel.swift */; };
+		653A00102275727600F571C7 /* URBMajorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653A000F2275727600F571C7 /* URBMajorModel.swift */; };
+		653A00122276396000F571C7 /* FreeAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653A00112276396000F571C7 /* FreeAnimate.swift */; };
 		653AFFCC226FE4A700F571C7 /* ZLSwipeableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653AFFC0226FE4A700F571C7 /* ZLSwipeableViewController.swift */; };
 		653AFFCD226FE4A700F571C7 /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653AFFC1226FE4A700F571C7 /* ViewManager.swift */; };
 		653AFFCE226FE4A700F571C7 /* HistoryDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653AFFC2226FE4A700F571C7 /* HistoryDemoViewController.swift */; };
@@ -28,6 +36,10 @@
 		653AFFEF2271468E00F571C7 /* MyMsgVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653AFFEE2271468E00F571C7 /* MyMsgVC.swift */; };
 		653AFFF122714B7E00F571C7 /* MsgTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653AFFF022714B7E00F571C7 /* MsgTableVC.swift */; };
 		653AFFF322714D2500F571C7 /* MsgTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653AFFF222714D2500F571C7 /* MsgTableCell.swift */; };
+		653AFFF62275542400F571C7 /* URBUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653AFFF52275542400F571C7 /* URBUserModel.swift */; };
+		653AFFF9227555FC00F571C7 /* URBNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653AFFF8227555FC00F571C7 /* URBNetwork.swift */; };
+		653AFFFB227557F000F571C7 /* URBRequestKeyDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653AFFFA227557F000F571C7 /* URBRequestKeyDefine.swift */; };
+		653AFFFD2275580A00F571C7 /* URBHttpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653AFFFC2275580A00F571C7 /* URBHttpTool.swift */; };
 		657A0F822257073300EF989E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657A0F812257073300EF989E /* AppDelegate.swift */; };
 		657A0F842257073300EF989E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657A0F832257073300EF989E /* ViewController.swift */; };
 		657A0F872257073300EF989E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 657A0F852257073300EF989E /* Main.storyboard */; };
@@ -39,6 +51,14 @@
 
 /* Begin PBXFileReference section */
 		2155C4105B2E4D92BBD0D814 /* Pods-URBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URBuddy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-URBuddy/Pods-URBuddy.debug.xcconfig"; sourceTree = "<group>"; };
+		653A000322755CEF00F571C7 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		653A000522755DA600F571C7 /* HintTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintTool.swift; sourceTree = "<group>"; };
+		653A00072275686B00F571C7 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		653A00092275713A00F571C7 /* URBRoleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URBRoleModel.swift; sourceTree = "<group>"; };
+		653A000B2275718F00F571C7 /* URBAuthorityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URBAuthorityModel.swift; sourceTree = "<group>"; };
+		653A000D227571CE00F571C7 /* URBMassageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URBMassageModel.swift; sourceTree = "<group>"; };
+		653A000F2275727600F571C7 /* URBMajorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URBMajorModel.swift; sourceTree = "<group>"; };
+		653A00112276396000F571C7 /* FreeAnimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeAnimate.swift; sourceTree = "<group>"; };
 		653AFFC0226FE4A700F571C7 /* ZLSwipeableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLSwipeableViewController.swift; sourceTree = "<group>"; };
 		653AFFC1226FE4A700F571C7 /* ViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewManager.swift; sourceTree = "<group>"; };
 		653AFFC2226FE4A700F571C7 /* HistoryDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryDemoViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +80,10 @@
 		653AFFEE2271468E00F571C7 /* MyMsgVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMsgVC.swift; sourceTree = "<group>"; };
 		653AFFF022714B7E00F571C7 /* MsgTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsgTableVC.swift; sourceTree = "<group>"; };
 		653AFFF222714D2500F571C7 /* MsgTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsgTableCell.swift; sourceTree = "<group>"; };
+		653AFFF52275542400F571C7 /* URBUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URBUserModel.swift; sourceTree = "<group>"; };
+		653AFFF8227555FC00F571C7 /* URBNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URBNetwork.swift; sourceTree = "<group>"; };
+		653AFFFA227557F000F571C7 /* URBRequestKeyDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URBRequestKeyDefine.swift; sourceTree = "<group>"; };
+		653AFFFC2275580A00F571C7 /* URBHttpTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URBHttpTool.swift; sourceTree = "<group>"; };
 		657A0F7E2257073200EF989E /* URBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		657A0F812257073300EF989E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		657A0F832257073300EF989E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +125,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		653A000222755CE100F571C7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				653A000322755CEF00F571C7 /* StringExtension.swift */,
+				653A000522755DA600F571C7 /* HintTool.swift */,
+				653A00072275686B00F571C7 /* Validation.swift */,
+				653A00112276396000F571C7 /* FreeAnimate.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		653AFFBF226FE4A700F571C7 /* ZLSwipeableViewSwift */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +162,28 @@
 			path = Calendar;
 			sourceTree = "<group>";
 		};
+		653AFFF4227553EC00F571C7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				653AFFF52275542400F571C7 /* URBUserModel.swift */,
+				653A00092275713A00F571C7 /* URBRoleModel.swift */,
+				653A000B2275718F00F571C7 /* URBAuthorityModel.swift */,
+				653A000F2275727600F571C7 /* URBMajorModel.swift */,
+				653A000D227571CE00F571C7 /* URBMassageModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		653AFFF7227555CB00F571C7 /* HttpTools */ = {
+			isa = PBXGroup;
+			children = (
+				653AFFF8227555FC00F571C7 /* URBNetwork.swift */,
+				653AFFFA227557F000F571C7 /* URBRequestKeyDefine.swift */,
+				653AFFFC2275580A00F571C7 /* URBHttpTool.swift */,
+			);
+			path = HttpTools;
+			sourceTree = "<group>";
+		};
 		657A0F752257073200EF989E = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +207,9 @@
 			children = (
 				653AFFD9226FF05600F571C7 /* LookingInfoView.swift */,
 				653AFFDB226FF07E00F571C7 /* LookingInfoView.xib */,
+				653A000222755CE100F571C7 /* Utils */,
+				653AFFF7227555CB00F571C7 /* HttpTools */,
+				653AFFF4227553EC00F571C7 /* Models */,
 				653AFFBF226FE4A700F571C7 /* ZLSwipeableViewSwift */,
 				653AFFDF227044B400F571C7 /* Calendar */,
 				657A0F972257B52400EF989E /* TempViewController.swift */,
@@ -272,16 +332,20 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-URBuddy/Pods-URBuddy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Cartography/Cartography.framework",
 				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/UIColor+FlatColors/UIColor_FlatColors.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cartography.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIColor_FlatColors.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,17 +365,29 @@
 				653AFFD0226FE4A700F571C7 /* Scheduler.swift in Sources */,
 				653AFFEF2271468E00F571C7 /* MyMsgVC.swift in Sources */,
 				653AFFE4227044B400F571C7 /* UpDownView.swift in Sources */,
+				653A000A2275713A00F571C7 /* URBRoleModel.swift in Sources */,
+				653A000422755CEF00F571C7 /* StringExtension.swift in Sources */,
+				653A000622755DA600F571C7 /* HintTool.swift in Sources */,
 				653AFFCD226FE4A700F571C7 /* ViewManager.swift in Sources */,
 				653AFFF322714D2500F571C7 /* MsgTableCell.swift in Sources */,
 				653AFFED2271132E00F571C7 /* SendMsgVC.swift in Sources */,
+				653A000E227571CE00F571C7 /* URBMassageModel.swift in Sources */,
+				653AFFF9227555FC00F571C7 /* URBNetwork.swift in Sources */,
 				657A0F982257B52400EF989E /* TempViewController.swift in Sources */,
 				653AFFD1226FE4A700F571C7 /* Direction.swift in Sources */,
+				653A00102275727600F571C7 /* URBMajorModel.swift in Sources */,
+				653A000C2275718F00F571C7 /* URBAuthorityModel.swift in Sources */,
 				653AFFDE226FF6FE00F571C7 /* DKAnimationTextField.swift in Sources */,
+				653A00082275686B00F571C7 /* Validation.swift in Sources */,
 				653AFFEB22705AC800F571C7 /* HeadIconVC.swift in Sources */,
 				657A0F842257073300EF989E /* ViewController.swift in Sources */,
+				653AFFF62275542400F571C7 /* URBUserModel.swift in Sources */,
+				653A00122276396000F571C7 /* FreeAnimate.swift in Sources */,
 				653AFFCE226FE4A700F571C7 /* HistoryDemoViewController.swift in Sources */,
 				653AFFDA226FF05600F571C7 /* LookingInfoView.swift in Sources */,
 				657A0F822257073300EF989E /* AppDelegate.swift in Sources */,
+				653AFFFB227557F000F571C7 /* URBRequestKeyDefine.swift in Sources */,
+				653AFFFD2275580A00F571C7 /* URBHttpTool.swift in Sources */,
 				653AFFE3227044B400F571C7 /* ZHFCalendarView.swift in Sources */,
 				653AFFCF226FE4A700F571C7 /* ZLSwipeableView.swift in Sources */,
 				653AFFE7227045DD00F571C7 /* CreateAccountVC.swift in Sources */,

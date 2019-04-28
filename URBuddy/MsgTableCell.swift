@@ -15,6 +15,9 @@ class MsgTableCell: UITableViewCell {
     @IBOutlet weak var majorL: UILabel!
     @IBOutlet weak var ageL: UILabel!
     @IBOutlet weak var replyBtn: UIButton!
+    @IBOutlet weak var sendTimeL: UILabel!
+    var telephone: String = ""
+    var messageID: String = ""
     
     override func awakeFromNib() {
         super.awakeFromNib()

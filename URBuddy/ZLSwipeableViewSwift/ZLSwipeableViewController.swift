@@ -13,6 +13,10 @@ class ZLSwipeableViewController: UIViewController {
     var colors = ["Turquoise", "Green Sea", "Emerald", "Nephritis", "Peter River", "Belize Hole", "Amethyst", "Wisteria", "Wet Asphalt", "Midnight Blue", "Sun Flower", "Orange", "Carrot", "Pumpkin", "Alizarin", "Pomegranate", "Clouds", "Silver", "Concrete", "Asbestos"]
     var colorIndex = 0
     var loadCardsFromXib = false
+    var userInfos = [Dictionary<String, Any>()]
+    var infoIndex = 0
+    
+    
     
     var reloadBarButtonItem: UIBarButtonItem!
     // var reloadBarButtonItem = UIBarButtonItem(barButtonSystemItem: "Reload", target: .Plain) { item in }
@@ -23,6 +27,7 @@ class ZLSwipeableViewController: UIViewController {
     var rightBarButtonItem: UIBarButtonItem!
     // var rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: "→", target: .Plain) { item in }
     var downBarButtonItem:UIBarButtonItem!
+    
     // var downBarButtonItem = UIBarButtonItem(barButtonSystemItem: "↓", target: .Plain) { item in }
     
     override func viewDidLayoutSubviews() {
@@ -34,8 +39,11 @@ class ZLSwipeableViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.userInfos = UserDefaults.standard.dictionary(forKey: "result")!["looking_infos"] as! [Dictionary<String, Any>]
+        
+        
         navigationController?.setToolbarHidden(false, animated: false)
-//        view.backgroundColor = UIColor.white
+        // view.backgroundColor = UIColor.white
         view.clipsToBounds = true
         
         reloadBarButtonItem = UIBarButtonItem(title: "Reload", style: .plain, target: self, action: #selector(reloadButtonAction))
@@ -52,27 +60,27 @@ class ZLSwipeableViewController: UIViewController {
 
         swipeableView = ZLSwipeableView()
         view.addSubview(swipeableView)
-        swipeableView.didStart = {view, location in
-            print("Did start swiping view at location: \(location)")
-        }
-        swipeableView.swiping = {view, location, translation in
-            print("Swiping at view location: \(location) translation: \(translation)")
-        }
-        swipeableView.didEnd = {view, location in
-            print("Did end swiping view at location: \(location)")
-        }
-        swipeableView.didSwipe = {view, direction, vector in
-            print("Did swipe view in direction: \(direction), vector: \(vector)")
-        }
-        swipeableView.didCancel = {view in
-            print("Did cancel swiping view")
-        }
-        swipeableView.didTap = {view, location in
-            print("Did tap at location \(location)")
-        }
-        swipeableView.didDisappear = { view in
-            print("Did disappear swiping view")
-        }
+//        swipeableView.didStart = {view, location in
+//            print("Did start swiping view at location: \(location)")
+//        }
+//        swipeableView.swiping = {view, location, translation in
+//            print("Swiping at view location: \(location) translation: \(translation)")
+//        }
+//        swipeableView.didEnd = {view, location in
+//            print("Did end swiping view at location: \(location)")
+//        }
+//        swipeableView.didSwipe = {view, direction, vector in
+//            print("Did swipe view in direction: \(direction), vector: \(vector)")
+//        }
+//        swipeableView.didCancel = {view in
+//            print("Did cancel swiping view")
+//        }
+//        swipeableView.didTap = {view, location in
+//            print("Did tap at location \(location)")
+//        }
+//        swipeableView.didDisappear = { view in
+//            print("Did disappear swiping view")
+//        }
 
         constrain(swipeableView, view) { view1, view2 in
             view1.left == view2.left+50
@@ -95,6 +103,7 @@ class ZLSwipeableViewController: UIViewController {
         let ProgrammaticallyAction = UIAlertAction(title: "Programmatically", style: .default) { (action) in
             self.loadCardsFromXib = false
             self.colorIndex = 0
+            self.infoIndex = 0
             self.swipeableView.discardViews()
             self.swipeableView.loadViews()
         }
@@ -103,6 +112,7 @@ class ZLSwipeableViewController: UIViewController {
         let XibAction = UIAlertAction(title: "From Xib", style: .default) { (action) in
             self.loadCardsFromXib = true
             self.colorIndex = 0
+            self.infoIndex = 0
             self.swipeableView.discardViews()
             self.swipeableView.loadViews()
         }
@@ -132,17 +142,30 @@ class ZLSwipeableViewController: UIViewController {
         if colorIndex >= colors.count {
             colorIndex = 0
         }
+        
 
         let cardView = CardView(frame: swipeableView.bounds)
         cardView.backgroundColor = colorForName(colors[colorIndex])
         colorIndex += 1
+        infoIndex += 1
         
         loadCardsFromXib = true
 
         if loadCardsFromXib {
-            let contentView = Bundle.main.loadNibNamed("LookingInfoView", owner: self, options: nil)?.first! as! UIView
+            let contentView = Bundle.main.loadNibNamed("LookingInfoView", owner: self, options: nil)?.first! as! LookingInfoView
+            
             contentView.translatesAutoresizingMaskIntoConstraints = false
             contentView.backgroundColor = cardView.backgroundColor
+            contentView.nameL.text = self.userInfos[infoIndex]["name"] as! String
+            contentView.ageL.text = "\(self.userInfos[infoIndex]["age"] as! Int)" as! String
+            contentView.majorL.text = self.userInfos[infoIndex]["major"] as! String
+            contentView.infoL.text = "Looking for: " + (self.userInfos[infoIndex]["info"] as! String)
+            let photoUrlString = self.userInfos[infoIndex]["photo_url"] as! String
+            var photoUrl : NSURL = NSURL(string: photoUrlString)!
+            var photoData : NSData = NSData(contentsOf:photoUrl as URL)!
+            var photoImage = UIImage(data:photoData as Data, scale: 1.0)
+            contentView.headIV.image = photoImage
+            
             cardView.addSubview(contentView)
 
             // This is important:

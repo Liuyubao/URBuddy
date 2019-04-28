@@ -8,12 +8,14 @@
 
 import UIKit
 import Photos
+import Alamofire
 
-class HeadIconVC: UIViewController, UIImagePickerControllerDelegate,UINavigationControllerDelegate {
+class HeadIconVC: UIViewController, UIImagePickerControllerDelegate,UINavigationControllerDelegate, URBNetworkDelegate {
     
     var imagePickerController: UIImagePickerController!
-
+    @IBOutlet weak var backBtn: UIButton!
     @IBOutlet weak var photoBtn: UIButton!
+    @IBOutlet weak var lookingForTF: UITextField!
     @IBAction func photoBtnClicked(_ sender: UIButton) {
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
             self.present(selectorController, animated: true, completion: nil)
@@ -21,10 +23,20 @@ class HeadIconVC: UIViewController, UIImagePickerControllerDelegate,UINavigation
             print("can't find camera")
         }
     }
+    
     @IBAction func nextBtnClicked(_ sender: UIButton) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "LookingInfoVC")
-        self.present(vc!, animated: true, completion: nil)
+        
+        
+        let jpgImg:Data = (self.photoBtn.currentImage?.jpegData(compressionQuality: 0.2))!
+        FreeAnimate.startAnimating()
+        URBNetwork.sharedManager().uploadImg([jpgImg], self)
+        
     }
+    
+    
+    
+    
+    
     
     // MARK: 用于弹出选择的对话框界面
     var selectorController: UIAlertController {
@@ -113,14 +125,70 @@ class HeadIconVC: UIViewController, UIImagePickerControllerDelegate,UINavigation
         self.view.endEditing(true)
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //上传图片获取url
+    func onUploadImg(_ response:[String : AnyObject]){
+        if response["code"] as! String == "success"{
+            let data = response["data"] as! NSDictionary
+            let regImgUrl = data["url"] as! String
+            // call register api
+            var params = [String: Any]()
+            params["user_name"] = UserDefaults.standard.string(forKey: "regName")
+            params["gender"] = UserDefaults.standard.integer(forKey: "regGender")
+            params["birthday"] = UserDefaults.standard.string(forKey: "regBirthday")
+            params["passcode"] = UserDefaults.standard.string(forKey: "regPsw")
+            params["major"] = UserDefaults.standard.string(forKey: "regMajor")
+            params["email"] = UserDefaults.standard.string(forKey: "regEmail")
+            params["looking_for"] = self.lookingForTF.text
+            params["photo"] = regImgUrl
+            params["telephone"] = UserDefaults.standard.string(forKey: "regTelephone")
+            
+            
+            URBNetwork.sharedManager().postRegister(params as! NSDictionary, self)
+            
+        }else{
+            (response["msg"] as! String).ext_debugPrintAndHint()
+        }
     }
-    */
+    
+    //注册
+    func onRegister(_ response:[String : AnyObject]){
+        if response["code"] as! String == "success"{
+            let result = response["result"] as! NSDictionary
+            //获取有用信息保存到沙盒
+            UserDefaults.standard.set(result, forKey: "result")
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "LookingInfoVC") as! HistoryDemoViewController
+            vc.modalTransitionStyle = .crossDissolve
+            FreeAnimate.stopAnimating()
+            self.present(vc, animated: true, completion: nil)
+            ("Successfully login").ext_debugPrintAndHint()
+            
+        }else{
+            (response["msg"] as! String).ext_debugPrintAndHint()
+        }
+    }
+    
+    
+    
+    
+    func requestSuccess(_ requestKey: NSInteger, _ response: [String : AnyObject]) {
+        switch requestKey {
+        case URBRequestKeyID.URB_GETIMGURL.rawValue:
+            onUploadImg(response)
+            break
+        case URBRequestKeyID.URB_REGISTER.rawValue:
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "LookingInfoVC") as! HistoryDemoViewController
+            vc.modalTransitionStyle = .crossDissolve
+            FreeAnimate.stopAnimating()
+            self.present(vc, animated: true, completion: nil)
+            ("Successfully login").ext_debugPrintAndHint()
+            break
+        default:
+            break
+        }
+    }
+    
+    func requestFail(_ requestKey: NSInteger, _ error: NSError) {
+        "something wrong".ext_debugPrintAndHint()
+    }
 
 }

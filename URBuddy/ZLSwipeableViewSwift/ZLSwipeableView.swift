@@ -149,6 +149,7 @@ open class ZLSwipeableView: UIView {
         } else if let view = previousView?() {
             viewToBeRewinded = view
         }
+        
 
         guard let view = viewToBeRewinded else { return }
 

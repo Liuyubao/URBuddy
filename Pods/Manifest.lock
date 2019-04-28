@@ -1,24 +1,34 @@
 PODS:
+  - Alamofire (4.8.0)
   - Cartography (3.1.0)
   - DropDown (2.3.12)
+  - NVActivityIndicatorView (4.4.0):
+    - NVActivityIndicatorView/Presenter (= 4.4.0)
+  - NVActivityIndicatorView/Presenter (4.4.0)
   - "UIColor+FlatColors (0.0.2)"
 
 DEPENDENCIES:
+  - Alamofire
   - Cartography
   - DropDown
+  - NVActivityIndicatorView
   - "UIColor+FlatColors"
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
     - Cartography
     - DropDown
+    - NVActivityIndicatorView
     - "UIColor+FlatColors"
 
 SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
   Cartography: 1988b7578871a56c036e7af17195cb2190edf18c
   DropDown: 0bcc278799ec11a3d34ce1aac9367fbbaf5423d9
+  NVActivityIndicatorView: ec7440a57af2450319d3a4181cca7da6fc127064
   "UIColor+FlatColors": 6c699df7a575281794c688c64cee6c44fd1f93b4
 
-PODFILE CHECKSUM: 713234ce5c836bfd7cffb71e0eaf10834ee5f236
+PODFILE CHECKSUM: 71dadc7cf4c5afe88b5798c922c6ee69342ecdef
 
 COCOAPODS: 1.5.3
